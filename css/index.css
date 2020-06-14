@@ -5,10 +5,39 @@
  *
  * Made By MaterializeCSS.com
  */
+.primary {
+  color: #ad1478;
+}
 
- .icon-block {
-    padding: 0 15px;
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    width: fit-content;
   }
-  .icon-block .material-icons {
-      font-size: inherit;
+  .sidenav li > a > i,
+  .sidenav li > a > [class^="mdi-"],
+  .sidenav li > a li > a > [class*="mdi-"],
+  .sidenav li > a > i.material-icons {
+    color: white;
   }
+}
+
+.text-424242 {
+  color: #424242;
+}
+
+.favorite-icon {
+  color: #ad1478;
+  vertical-align: top;
+  font-size: large;
+}
+.primary {
+  color: #ad1478;
+}
