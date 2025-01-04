@@ -59,20 +59,19 @@
   <nav>
     <div id="nav" class="nav-wrapper white" style="padding-left: 20px;padding-right: 20px;">
       <a href="http://amitgunjal.github.io/amitgunjal.github.io//" class="brand-logo"
-      style="font-family: Arial, sans-serif; font-size: 20px; color: #2c3e50; text-decoration: none; display: inline-flex; align-items: center; border-radius: 5px; transition: background-color 0.3s ease;">
-      <img src="images/indian-flag.png" height="18" width="27"
-        style="vertical-align: middle; margin-right: 8px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
-      <span style="font-weight: bold; color: #2980b9;">AMIT GUNJAL</span>
-    </a>
+        style="font-family: Arial, sans-serif; font-size: 20px; color: #2c3e50; text-decoration: none; display: inline-flex; align-items: center; border-radius: 5px; transition: background-color 0.3s ease;">
+        <img src="images/indian-flag.png" height="18" width="27"
+          style="vertical-align: middle; margin-right: 8px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
+        <span style="font-weight: bold; color: #2980b9;">AMIT GUNJAL</span>
+      </a>
       <a href="#" data-activates="mobile-demo" class="button-collapse color-primary-dark"><i
           class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="about.html" class="color-primary-dark">About</a></li>
         <li class="color-primary-dark-back"><a href="projects.html" class="">Projects</a></li>
         <!-- <li><a href="collapsible.html" class="color-primary-dark">Blog</a></li> -->
-        <li><a class="tooltipped blue btn" data-position="bottom" data-delay="50"
-            data-tooltip="Click to download" href="docs/Resume.pdf">Resume <i
-              class="material-icons right">file_download</i></a></li>
+        <li><a class="tooltipped blue btn" data-position="bottom" data-delay="50" data-tooltip="Click to download"
+            href="docs/Resume.pdf">Resume <i class="material-icons right">file_download</i></a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="about.html" class="color-primary-dark">About</a></li>
@@ -148,7 +147,19 @@
   <!--------------------------------------------- Footer---------------------------------------------------------------->
 
   <footer class="page-footer white" style="padding: 20px; text-align: center; font-family: Arial, sans-serif;">
-    <p style="margin: 0; font-size: 16px; color: #333;">2025 Amit Gunjal</p>
+    <div style="font-family: 'Arial', sans-serif; font-size: 18px; color: #333; text-align: center; padding: 10px;">
+      Made with <span style="color: #e25555; font-size: 20px;">❤️</span> by Amit
+      <span style="font-size: 14px; color: #777;">(Updated on: <span id="current-date"></span>)</span>
+    </div>
+    <script>
+      // Set today's date dynamically
+      const today = new Date().toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+      document.getElementById('current-date').textContent = today;
+    </script>
     <div style="margin-top: 10px;">
       <a href="https://www.linkedin.com/in/amit-gunjal-8612068a/" target="_blank"
         style="text-decoration: none; margin: 0 10px; color: #0077b5; font-size: 24px;">

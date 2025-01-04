@@ -67,9 +67,8 @@
       <ul class="right hide-on-med-and-down">
         <li class="color-primary-dark-back"><a href="about.html" class="">About</a></li>
         <li><a href="projects.html" class="color-primary-dark">Projects</a></li>
-        <li><a class="tooltipped blue btn" data-position="bottom" data-delay="50"
-            data-tooltip="Click to download" href="docs/Resume.pdf">Resume <i
-              class="material-icons right">file_download</i></a></li>
+        <li><a class="tooltipped blue btn" data-position="bottom" data-delay="50" data-tooltip="Click to download"
+            href="docs/Resume.pdf">Resume <i class="material-icons right">file_download</i></a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="about.html" class="color-primary-dark">About</a></li>
@@ -114,7 +113,8 @@
   </head>
 
   <body>
-    <h4 align="center" class="blue flow-text" style="padding: 10px;">Through My Lens: A Showcase of Moments Captured Perfectly</h4>
+    <h4 align="center" class="blue flow-text" style="padding: 10px;">Through My Lens: A Showcase of Moments Captured
+      Perfectly</h4>
 
     <div class="photo-collage">
       <img src="images/im1.JPG" alt="Photo 1">
@@ -131,7 +131,19 @@
     <!--------------------------------------------- Footer---------------------------------------------------------------->
 
     <footer class="page-footer white" style="padding: 20px; text-align: center; font-family: Arial, sans-serif;">
-      <p style="margin: 0; font-size: 16px; color: #333;">2025 Amit Gunjal</p>
+      <div style="font-family: 'Arial', sans-serif; font-size: 18px; color: #333; text-align: center; padding: 10px;">
+        Made with <span style="color: #e25555; font-size: 20px;">❤️</span> by Amit
+        <span style="font-size: 14px; color: #777;">(Updated on: <span id="current-date"></span>)</span>
+      </div>
+      <script>
+        // Set today's date dynamically
+        const today = new Date().toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
+        document.getElementById('current-date').textContent = today;
+      </script>
       <div style="margin-top: 10px;">
         <a href="https://www.linkedin.com/in/amit-gunjal-8612068a/" target="_blank"
           style="text-decoration: none; margin: 0 10px; color: #0077b5; font-size: 24px;">
