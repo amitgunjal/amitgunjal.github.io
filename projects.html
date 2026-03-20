@@ -1,184 +1,114 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Projects -Amit</title>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Amit Gunjal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<style type="text/css">
-  html {
-    margin-right: 0px;
-    margin-left: 0px;
-    background-color: #fff;
-  }
-
-  #nav .color-primary-dark {
-    color: #2196f3;
-  }
-
-  #nav .color-primary-dark-back a {
-    background-color: #2196f3;
-  }
-
-  .parallax-container {
-    height: 300px;
-  }
-
-  .git-logo:hover {
-    height: 72px;
-    width: 72px;
-    display: block;
-    padding: 10px;
-    border: 2px solid red;
-  }
-</style>
-<!--------------------------------------------- Body-------------------------------------------------------------->
-
 <body>
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript">
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">AG</span>
+          <span class="brand-text">Amit Gunjal</span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="projects.html" class="is-active">Projects</a>
+          <a href="about.html">About</a>
+          <a href="docs/Resume.pdf" class="nav-cta">Resume</a>
+        </nav>
+      </div>
+    </header>
 
-    $(document).ready(function () {
-      $('.materialboxed').materialbox();
-    });
-
-
-  </script>
-
-  <!--------------------------------------------- NavBAr---------------------------------------------------------------->
-
-  <nav>
-    <div id="nav" class="nav-wrapper white" style="padding-left: 20px;padding-right: 20px;">
-      <a href="http://amitgunjal.github.io/amitgunjal.github.io//" class="brand-logo"
-        style="font-family: Arial, sans-serif; font-size: 20px; color: #2c3e50; text-decoration: none; display: inline-flex; align-items: center; border-radius: 5px; transition: background-color 0.3s ease;">
-        <img src="images/indian-flag.png" height="18" width="27"
-          style="vertical-align: middle; margin-right: 8px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
-        <span style="font-weight: bold; color: #2980b9;">AMIT GUNJAL</span>
-      </a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse color-primary-dark"><i
-          class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="about.html" class="color-primary-dark">About</a></li>
-        <li class="color-primary-dark-back"><a href="projects.html" class="">Projects</a></li>
-        <!-- <li><a href="collapsible.html" class="color-primary-dark">Blog</a></li> -->
-        <li><a class="tooltipped blue btn" data-position="bottom" data-delay="50" data-tooltip="Click to download"
-            href="docs/Resume.pdf">Resume <i class="material-icons right">file_download</i></a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="about.html" class="color-primary-dark">About</a></li>
-        <li><a href="badges.html" class="color-primary-dark">Projects</a></li>
-        <!-- <li><a href="collapsible.html" class="color-primary-dark">Blog</a></li> -->
-        <li><a class="tooltipped btn blue waves-effect waves-light btn blue" data-position="bottom" data-delay="50"
-            data-tooltip="Click to download" href="docs/Resume.pdf">Resume <i
-              class="material-icons right">file_download</i></a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- --------------------------------------------- Project 1 ------------------------------------------------------ -->
-
-  <h4 align="center" class="blue flow-text" style="padding: 10px;">Projects Completed During Academic Years.</h4>
-  <div class="row" style="padding: 20px; max-width: 1200px; margin: 0 auto;">
-
-    <!-- Project 1 -->
-    <div class="col s12 m6">
-      <div class="card hoverable"
-        style="border-radius: 12px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.1);">
-        <div class="card-image" style="position: relative;">
-          <img class="materialboxed responsive-img" src="images/project_1.png" alt="Project 1"
-            style="height: 200px; object-fit: cover;">
-          <span class="card-title"
-            style="background: rgba(0,0,0,0.6); color: white; padding: 10px; border-radius: 4px; position: absolute; bottom: 10px; left: 10px;">
-            ADAM - Question Answering System
-          </span>
-        </div>
-        <div class="card-content" style="padding: 20px; text-align: left;">
-          <p style="color: #555; font-size: 1em; line-height: 1.5;">
-            ADAM is a Closed Domain Question Answering System that follows a Cognitive Approach to answering questions
-            posed in natural language.
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Selected Projects</p>
+          <h1>Selected projects.</h1>
+          <p class="section-copy section-copy-narrow">
+            A few projects across AI, NLP, and full-stack development.
           </p>
         </div>
-        <div class="card-action" style="background: #f7f7f7; text-align: right; border-top: 1px solid #ddd;">
-          <a href="https://github.com/5hirish/adam_qas" class="blue-text text-darken-2" target="_blank"
-            style="font-size: 1em; font-weight: bold; text-transform: uppercase;">
-            <i class="material-icons" style="vertical-align: middle; margin-bottom: 5px;">public</i> View on GitHub
-          </a>
-        </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Project 2 -->
-    <div class="col s12 m6">
-      <div class="card hoverable"
-        style="border-radius: 12px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.1);">
-        <div class="card-image" style="position: relative;">
-          <img class="materialboxed responsive-img" src="images/project_2.png" alt="Project 2"
-            style="height: 200px; object-fit: cover;">
-          <span class="card-title"
-            style="background: rgba(0,0,0,0.6); color: white; padding: 10px; border-radius: 4px; position: absolute; bottom: 10px; left: 10px;">
-            Online Food Ordering System
-          </span>
+      <section class="section-block">
+        <div class="container stacked-projects">
+          <article class="showcase-card">
+            <div class="showcase-copy">
+              <p class="project-tag">Current AI Focus</p>
+              <h2>Querion AI</h2>
+              <p>AI-first product focused on query-driven workflows.</p>
+              <div class="project-meta">
+                <span>AI Product</span>
+                <span>Query Experience</span>
+                <span>Modern Workflow</span>
+              </div>
+              <a href="https://github.com/amitgunjal/querion-ai" target="_blank" rel="noreferrer" class="button button-primary">View Repository</a>
+            </div>
+            <div class="showcase-media">
+              <img src="images/back.jpg" alt="Querion AI project highlight">
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-copy">
+              <p class="project-tag">Featured AI Work</p>
+              <h2>ADAM Question Answering System</h2>
+              <p>Question answering system built around NLP.</p>
+              <div class="project-meta">
+                <span>NLP</span>
+                <span>Question Answering</span>
+                <span>Academic Research</span>
+              </div>
+              <a href="https://github.com/5hirish/adam_qas" target="_blank" rel="noreferrer" class="button button-primary">View Repository</a>
+            </div>
+            <div class="showcase-media">
+              <img src="images/project_1.png" alt="ADAM project screenshot">
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-copy">
+              <p class="project-tag">Full-Stack Build</p>
+              <h2>Online Food Ordering System</h2>
+              <p>Web application for ordering and delivery workflows.</p>
+              <div class="project-meta">
+                <span>Web App</span>
+                <span>Delivery Logic</span>
+                <span>Messaging API</span>
+              </div>
+              <a href="https://github.com/amitgunjal/food-ordering-app" target="_blank" rel="noreferrer" class="button button-primary">View Repository</a>
+            </div>
+            <div class="showcase-media">
+              <img src="images/project_2.png" alt="Food ordering app screenshot">
+            </div>
+          </article>
         </div>
-        <div class="card-content" style="padding: 20px; text-align: left;">
-          <p style="color: #555; font-size: 1em; line-height: 1.5;">
-            A web-based platform for ordering food online. Ensures 15-minute delivery by analyzing and selecting the
-            most optimal path and notifies customers via a Messaging API.
-          </p>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <p class="footer-title">Amit Gunjal</p>
+          <p class="footer-copy">Focused on AI-driven products, backend systems, and thoughtful digital experiences.</p>
         </div>
-        <div class="card-action" style="background: #f7f7f7; text-align: right; border-top: 1px solid #ddd;">
-          <a href="https://github.com/amitgunjal/food-ordering-app" class="blue-text text-darken-2" target="_blank"
-            style="font-size: 1em; font-weight: bold; text-transform: uppercase;">
-            <i class="material-icons" style="vertical-align: middle; margin-bottom: 5px;">public</i> View on GitHub
-          </a>
+        <div class="footer-links">
+          <a href="https://github.com/amitgunjal/" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/amit-gunjal-8612068a/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:amitgunjal26@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://x.com/_amitgunjal" target="_blank" rel="noreferrer"><i class="fab fa-x-twitter"></i></a>
         </div>
       </div>
-    </div>
+    </footer>
   </div>
-
-
-  <!--------------------------------------------- Footer---------------------------------------------------------------->
-
-  <footer class="page-footer white" style="padding: 20px; text-align: center; font-family: Arial, sans-serif;">
-    <div style="font-family: 'Arial', sans-serif; font-size: 18px; color: #333; text-align: center; padding: 10px;">
-      Made with <span style="color: #e25555; font-size: 20px;">❤️</span> by Amit
-      <span style="font-size: 14px; color: #777;">(Updated on: <span id="current-date"></span>)</span>
-    </div>
-    <script>
-      // Set today's date dynamically
-      const today = new Date().toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      });
-      document.getElementById('current-date').textContent = today;
-    </script>
-    <div style="margin-top: 10px;">
-      <a href="https://www.linkedin.com/in/amit-gunjal-8612068a/" target="_blank"
-        style="text-decoration: none; margin: 0 10px; color: #0077b5; font-size: 24px;">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="mailto:amitgunjal@gmail.com" target="_blank"
-        style="text-decoration: none; margin: 0 10px; color: #d44638; font-size: 24px;">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://www.instagram.com/_amitgunjal" target="_blank"
-        style="text-decoration: none; margin: 0 10px; color: #e1306c; font-size: 24px;">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://x.com/_amitgunjal" target="_blank"
-        style="text-decoration: none; margin: 0 10px; color: #1da1f2; font-size: 24px;">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </div>
-  </footer>
 </body>
-
 </html>
